@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import "./Home.css";
 
+const initialBorad = Array(9).fill(null);
 
-
-function Home = () =>{
-    const [board, setBoard] = useState(intialBoard);
+const Home = () =>{
+    const [board, setBoard] = useState(initialBorad);
     const [xIsNext, setXIsNext] = useState(true);
 
     const handleClick = (index) => {
